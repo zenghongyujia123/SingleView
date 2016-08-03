@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C25C264DC82B5CE82081E32 /* libPods-SingleView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E614D919FCEDD7221090693E /* libPods-SingleView.a */; };
 		B10F58EE1D51E07C00CECBAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F58ED1D51E07C00CECBAA /* main.m */; };
 		B10F58F11D51E07C00CECBAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F58F01D51E07C00CECBAA /* AppDelegate.m */; };
 		B10F58F41D51E07C00CECBAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B10F58F31D51E07C00CECBAA /* ViewController.m */; };
@@ -14,9 +15,12 @@
 		B10F58FA1D51E07C00CECBAA /* SingleView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B10F58F81D51E07C00CECBAA /* SingleView.xcdatamodeld */; };
 		B10F58FC1D51E07C00CECBAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10F58FB1D51E07C00CECBAA /* Assets.xcassets */; };
 		B10F58FF1D51E07C00CECBAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10F58FD1D51E07C00CECBAA /* LaunchScreen.storyboard */; };
+		B14F7EB31D51E9A300D54CA3 /* UIViewController_Second.m in Sources */ = {isa = PBXBuildFile; fileRef = B14F7EB21D51E9A300D54CA3 /* UIViewController_Second.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D23416B8E7D6BAA7DFB0B87 /* Pods-SingleView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingleView/Pods-SingleView.release.xcconfig"; sourceTree = "<group>"; };
+		AC42A0D8613E8CFDA482CA20 /* Pods-SingleView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingleView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingleView/Pods-SingleView.debug.xcconfig"; sourceTree = "<group>"; };
 		B10F58E91D51E07C00CECBAA /* SingleView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingleView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B10F58ED1D51E07C00CECBAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B10F58EF1D51E07C00CECBAA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,9 @@
 		B10F58FB1D51E07C00CECBAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B10F58FE1D51E07C00CECBAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10F59001D51E07C00CECBAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B14F7EB11D51E94900D54CA3 /* UIViewController_Second.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewController_Second.h; sourceTree = "<group>"; };
+		B14F7EB21D51E9A300D54CA3 /* UIViewController_Second.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewController_Second.m; sourceTree = "<group>"; };
+		E614D919FCEDD7221090693E /* libPods-SingleView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SingleView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C25C264DC82B5CE82081E32 /* libPods-SingleView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B0343436B0BE71E41636138 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC42A0D8613E8CFDA482CA20 /* Pods-SingleView.debug.xcconfig */,
+				0D23416B8E7D6BAA7DFB0B87 /* Pods-SingleView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B10F58E01D51E07C00CECBAA = {
 			isa = PBXGroup;
 			children = (
 				B10F58EB1D51E07C00CECBAA /* SingleView */,
 				B10F58EA1D51E07C00CECBAA /* Products */,
+				4B0343436B0BE71E41636138 /* Pods */,
+				C2CC66C2D6C8073C5B2408F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +89,8 @@
 				B10F59001D51E07C00CECBAA /* Info.plist */,
 				B10F58F81D51E07C00CECBAA /* SingleView.xcdatamodeld */,
 				B10F58EC1D51E07C00CECBAA /* Supporting Files */,
+				B14F7EB11D51E94900D54CA3 /* UIViewController_Second.h */,
+				B14F7EB21D51E9A300D54CA3 /* UIViewController_Second.m */,
 			);
 			path = SingleView;
 			sourceTree = "<group>";
@@ -82,6 +103,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C2CC66C2D6C8073C5B2408F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E614D919FCEDD7221090693E /* libPods-SingleView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +118,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B10F59031D51E07C00CECBAA /* Build configuration list for PBXNativeTarget "SingleView" */;
 			buildPhases = (
+				F9F18D889193ED8FB9684CC5 /* [CP] Check Pods Manifest.lock */,
 				B10F58E51D51E07C00CECBAA /* Sources */,
 				B10F58E61D51E07C00CECBAA /* Frameworks */,
 				B10F58E71D51E07C00CECBAA /* Resources */,
+				4EC48E633442EB570F1498BB /* [CP] Embed Pods Frameworks */,
+				E089E4A2F24D32FC15819561 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -147,6 +179,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EC48E633442EB570F1498BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleView/Pods-SingleView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E089E4A2F24D32FC15819561 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingleView/Pods-SingleView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9F18D889193ED8FB9684CC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B10F58E51D51E07C00CECBAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,6 +234,7 @@
 			files = (
 				B10F58FA1D51E07C00CECBAA /* SingleView.xcdatamodeld in Sources */,
 				B10F58F41D51E07C00CECBAA /* ViewController.m in Sources */,
+				B14F7EB31D51E9A300D54CA3 /* UIViewController_Second.m in Sources */,
 				B10F58F11D51E07C00CECBAA /* AppDelegate.m in Sources */,
 				B10F58EE1D51E07C00CECBAA /* main.m in Sources */,
 			);
@@ -265,6 +346,7 @@
 		};
 		B10F59041D51E07C00CECBAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC42A0D8613E8CFDA482CA20 /* Pods-SingleView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingleView/Info.plist;
@@ -276,6 +358,7 @@
 		};
 		B10F59051D51E07C00CECBAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D23416B8E7D6BAA7DFB0B87 /* Pods-SingleView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SingleView/Info.plist;
@@ -304,6 +387,7 @@
 				B10F59051D51E07C00CECBAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
